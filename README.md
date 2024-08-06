@@ -110,11 +110,11 @@ Ayrıca unutulmaması gereken bazı noktalar şunlardır:
 
 <strong>Soru</strong>: <em>Neden dönüş değeri olarak "kibar_ERROR" alıyorum?</em>
 
-Muhtemelen UART çevre birimi ile ilgili bir hatayla karşılaşıyorsunuz veya kullandığınız Nextion yapısının özelliği için geçerli limit aralığının dışında bir değer sağlıyorsunuz.
+Sorununuzun muhtemel nedeni yanlış bağlantılar veya master ve slave cihazlar arasında bir senkronizasyon sorunudur. Bağlantılarınızı kontrol edin. Bağlantıların doğru olduğundan eminseniz, cihazlarda bir güç döngüsü gerçekleştirin, her iki cihazı da sıfırlayın (QMC5883L sürücüsü için, KIBAR_QMC5883L_SOFTWARE_RESET_) ve SCL hattının pinini dokuz kez toggle'layın.
 
 <strong>Soru</strong>: <em>I2C birimi hangi ayarlar ile kullanılmalı?</em>
 
-UART çevre birimini asenkronize modda yapılandırmanız gerekir.
+Cihaz adresi 7 bittir. I2C protokolünüzü 7 bit adreslemeyle ve 100 kbit/s standart modda veya 400 kbit/s hızlı modda başlatın.
 
 <strong>Soru</strong>: <em>Kütüphane derleyici tarafından görülemiyor. Ne yapmalıyım?</em>
 
