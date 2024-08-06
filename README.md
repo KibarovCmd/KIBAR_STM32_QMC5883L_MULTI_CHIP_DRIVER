@@ -49,7 +49,17 @@ Additionally, some points to remember are:
 
 The probable cause of your issue is either incorrect connections or a synchronization problem between the master and slave devices. Check your connections. If you are sure the connections are correct, perform a power cycle on the devices, reset both devices (for QMC5883L drive, KIBAR_QMC5883L_SOFTWARE_RESET_), and toggle the SCL line nine times.
 
+<strong>Question</strong>: <em>How should I2C be used?</em>
+
 The device address is 7-bit. Start your I2C protocol with 7-bit addressing and in either 100 kbit/s standard mode or 400 kbit/s fast mode.
+
+<strong>Question</strong>: <em>The library is not visible to the compiler. What should I do?</em>
+
+This is a common issue and indicates that the paths to the header files are not set correctly. From the project settings, add the header file paths to the project for all configurations.
+
+<strong>Question</strong>: <em>Can it be used with other KIBAR libraries?</em>
+
+Yes, it can be easily used with other KIBAR libraries.
 
 # KIBAR_STM32_QMC5883L_MULTI_CHIP_DRIVER
 [TR]Bu KIBAR sürücüsü, HAL kitaplığını temel alan tüm STM32XXXX mikro denetleyicilerini ve kartlarını desteklemek için geliştirilmiş bir QMC5883L çoklu yonga sürücüsüdür. QMC5883L çoklu yongasının tüm özelliklerini destekler.
