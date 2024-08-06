@@ -52,7 +52,7 @@ Additionally, some points to remember are:
 
 Kibar QMC5883L çoklu yonga sürücüsü, tüm Kibar sürücüleri gibi KIBAR yapısının oluşturulmasını gerektirir. QMC5883L çoklu yonga sürücüsünde bu KIBAR_QMC5883L_ adı ile refere edilmiştir (KIBAR_QMC5883L yapısı, bağlı olduğu I2C çevre birimine referansla oluşturulur.).
 
-Kibar QMC5883L çoklu çip sürücüsünü aktif hale getirmek için tüm Kibar sürücülerinde olduğu gibi bir yaratıcı fonksiyonunun kullanılması gerekmektedir. Bu sürücüde bu işlev NEW_KIBAR_QMC5883L şeklinde refere edilmiştir. Örnek bir kullanım aşağıda gösterilmektedir:
+Kibar QMC5883L çoklu yonga sürücüsünü aktif hale getirmek için tüm Kibar sürücülerinde olduğu gibi bir yaratıcı fonksiyonunun kullanılması gerekmektedir. Bu sürücüde bu işlev NEW_KIBAR_QMC5883L şeklinde refere edilmiştir. Örnek bir kullanım aşağıda gösterilmektedir:
 
 <img src="Images/IMAGE1.png" width="auto">
 
