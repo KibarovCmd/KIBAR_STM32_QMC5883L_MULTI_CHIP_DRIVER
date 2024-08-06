@@ -61,7 +61,7 @@ This is a common issue and indicates that the paths to the header files are not 
 
 Yes, it can be easily used with other KIBAR libraries.
 
-# KIBAR_STM32_QMC5883L_MULTI_CHIP_DRIVER
+# KIBAR_STM32_QMC5883L_ÇOKLU_YONGA_SÜRÜCÜSÜ
 [TR]Bu KIBAR sürücüsü, HAL kitaplığını temel alan tüm STM32XXXX mikro denetleyicilerini ve kartlarını desteklemek için geliştirilmiş bir QMC5883L çoklu yonga sürücüsüdür. QMC5883L çoklu yongasının tüm özelliklerini destekler.
 
 <strong>Soru</strong>: <em>Kibar QMC5883L çoklu yonga Sürücüsü Nasıl Kullanılır?</em>
