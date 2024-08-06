@@ -80,7 +80,7 @@ Kibar QMC5883L çoklu yonga sürücüsünü etkinleştirdikten sonra yonganın k
 
 'KIBAR_QMC5883L_INIT_BASIC_LEVEL_' işlevi, sürücüyü QMC5883L veri sayfasında açıklanan genel konfigürasyonla başlatır. Bu fonksiyon herhangi bir parametre almaz. Hızlı bir başlangıç ​​yapmak istiyorsanız bu işlevi doğrudan kullanabilirsiniz.
 
-KIBAR_QMC5883L_INIT_HIGH_LEVEL_` işlevi, ayarları kendiniz yapılandırmanıza olanak tanır ancak güvenlik amacıyla `SET/RESET PERIOD` registerının değerini otomatik olarak belirler.
+`KIBAR_QMC5883L_INIT_HIGH_LEVEL_` işlevi, ayarları kendiniz yapılandırmanıza olanak tanır ancak güvenlik amacıyla `SET/RESET PERIOD` registerının değerini otomatik olarak belirler.
 
 'KIBAR_QMC5883L_INIT_HIGH_LEVEL_TWO_' işlevi, yonga üreticisi tarafından rezerve edilen registerlar dışındaki tüm ayarları yapılandırmanıza olanak tanır. Ancak güvenlik nedeniyle `SET/RESET PERIOD` kaydına '0x01' girmenin en uygun seçim olduğunu unutmayın.
 
