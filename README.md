@@ -47,7 +47,7 @@ Additionally, some points to remember are:
 
 <strong>Question</strong>: <em>Why am I getting "kibar_ERROR" as the return value?</em>
 
-The probable cause of your issue is either incorrect connections or a synchronization problem between the master and slave devices. Check your connections. If you are sure the connections are correct, perform a power cycle on the devices, reset both devices (for QMC5883L drive, ), and toggle the SCL line nine times.
+The probable cause of your issue is either incorrect connections or a synchronization problem between the master and slave devices. Check your connections. If you are sure the connections are correct, perform a power cycle on the devices, reset both devices (for QMC5883L drive, KIBAR_QMC5883L_SOFTWARE_RESET_), and toggle the SCL line nine times.
 
 # KIBAR_STM32_QMC5883L_MULTI_CHIP_DRIVER
 [TR]Bu KIBAR sürücüsü, HAL kitaplığını temel alan tüm STM32XXXX mikro denetleyicilerini ve kartlarını desteklemek için geliştirilmiş bir QMC5883L çoklu yonga sürücüsüdür. QMC5883L çoklu yongasının tüm özelliklerini destekler.
