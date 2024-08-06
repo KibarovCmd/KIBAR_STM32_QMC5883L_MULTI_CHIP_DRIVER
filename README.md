@@ -107,3 +107,19 @@ Ayrıca unutulmaması gereken bazı noktalar şunlardır:
 - `KIBAR_QMC5883L_REGISTER_READ_CHIP_ID_` işlevi doğru çalıştığında `0xFF` döndürmelidir. Bir sorundan şüpheleniyorsanız `KIBAR_QMC5883L_IS_ACTIVE_` işlevini çağırın.
 
 - Varsayılan olarak, Roll-Pointer işlevi devre dışıyken Kesme işlevi etkindir.
+
+<strong>Soru</strong>: <em>Neden dönüş değeri olarak "kibar_ERROR" alıyorum?</em>
+
+Muhtemelen UART çevre birimi ile ilgili bir hatayla karşılaşıyorsunuz veya kullandığınız Nextion yapısının özelliği için geçerli limit aralığının dışında bir değer sağlıyorsunuz.
+
+<strong>Soru</strong>: <em>I2C birimi hangi ayarlar ile kullanılmalı?</em>
+
+UART çevre birimini asenkronize modda yapılandırmanız gerekir.
+
+<strong>Soru</strong>: <em>Kütüphane derleyici tarafından görülemiyor. Ne yapmalıyım?</em>
+
+Bu yaygın bir sorundur ve başlık dosyalarına giden yolların doğru şekilde ayarlanmadığını gösterir. Proje ayarlarından tüm konfigürasyonlar için başlık dosyalarının yolunu projeye ekleyin.
+
+<strong>Soru</strong>: <em>Diğer KIBAR kütüphaneleri ile kullanılabilir mi?</em>
+
+Evet diğer KIBAR kütüphaneleri ile rahatlıkla kullanılabilir.
