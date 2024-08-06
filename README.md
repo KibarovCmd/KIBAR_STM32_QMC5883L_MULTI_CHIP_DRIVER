@@ -47,7 +47,7 @@ Additionally, some points to remember are:
 
 <strong>Question</strong>: <em>Why am I getting "kibar_ERROR" as the return value?</em>
 
-The probable cause of your issue is either incorrect connections or a synchronization problem between the master and slave devices. Check your connections. If you are sure the connections are correct, perform a power cycle on the devices, reset both devices (for QMC5883L drive, KIBAR_QMC5883L_SOFTWARE_RESET_), and toggle the SCL line nine times.
+The probable cause of your issue is either incorrect connections or a synchronization problem between the master and slave devices. Check your connections. If you are sure the connections are correct, perform a power cycle on the devices, reset both devices (for KIBAR QMC5883L multi-chip driver, KIBAR_QMC5883L_SOFTWARE_RESET_), and toggle the SCL line nine times.
 
 <strong>Question</strong>: <em>How should I2C be used?</em>
 
@@ -110,7 +110,7 @@ Ayrıca unutulmaması gereken bazı noktalar şunlardır:
 
 <strong>Soru</strong>: <em>Neden dönüş değeri olarak "kibar_ERROR" alıyorum?</em>
 
-Sorununuzun muhtemel nedeni yanlış bağlantılar veya master ve slave cihazlar arasında bir senkronizasyon sorunudur. Bağlantılarınızı kontrol edin. Bağlantıların doğru olduğundan eminseniz, cihazlarda bir güç döngüsü gerçekleştirin, her iki cihazı da sıfırlayın (QMC5883L sürücüsü için, KIBAR_QMC5883L_SOFTWARE_RESET_) ve SCL hattının pinini dokuz kez toggle'layın.
+Sorununuzun muhtemel nedeni yanlış bağlantılar veya master ve slave cihazlar arasında bir senkronizasyon sorunudur. Bağlantılarınızı kontrol edin. Bağlantıların doğru olduğundan eminseniz, cihazlarda bir güç döngüsü gerçekleştirin, her iki cihazı da sıfırlayın (KIBAR QMC5883L çoklu yonga sürücüsü için, KIBAR_QMC5883L_SOFTWARE_RESET_) ve SCL hattının pinini dokuz kez toggle'layın.
 
 <strong>Soru</strong>: <em>I2C birimi hangi ayarlar ile kullanılmalı?</em>
 
