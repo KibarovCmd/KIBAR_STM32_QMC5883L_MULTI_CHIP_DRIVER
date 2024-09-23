@@ -74,9 +74,9 @@ KIBAR_AXIS_DATA KIBAR_QMC5883L_REGISTER_READ_AXIS_DATA_(KIBAR_QMC5883L_ kibar_qm
 	HAL_I2C_Mem_Read(kibar_qmc5883l_->kibar_i2c_, KIBAR_ADDRESS_DEVICE_, KIBAR_REGISTER_DATA_OUTPUT_Y_LSB_, KIBAR_REGISTER_GENERAL_SIZE_, &kibar_axis_data[3], KIBAR_REGISTER_GENERAL_SIZE_, KIBAR_TIMEOUT_);
 	HAL_I2C_Mem_Read(kibar_qmc5883l_->kibar_i2c_, KIBAR_ADDRESS_DEVICE_, KIBAR_REGISTER_DATA_OUTPUT_Z_MSB_, KIBAR_REGISTER_GENERAL_SIZE_, &kibar_axis_data[4], KIBAR_REGISTER_GENERAL_SIZE_, KIBAR_TIMEOUT_);
 	HAL_I2C_Mem_Read(kibar_qmc5883l_->kibar_i2c_, KIBAR_ADDRESS_DEVICE_, KIBAR_REGISTER_DATA_OUTPUT_Z_LSB_, KIBAR_REGISTER_GENERAL_SIZE_, &kibar_axis_data[5], KIBAR_REGISTER_GENERAL_SIZE_, KIBAR_TIMEOUT_);
-	kibar_data.kibar_DATA_AXIS_X = ((kibar_axis_data[0] << 8) | kibar_axis_data[1]);
-	kibar_data.kibar_DATA_AXIS_Y = ((kibar_axis_data[2] << 8) | kibar_axis_data[3]);
-	kibar_data.kibar_DATA_AXIS_Z = ((kibar_axis_data[4] << 8) | kibar_axis_data[5]);
+	kibar_data.kibar_DATA_AXIS_X = (int16_t)((kibar_axis_data[0] << 8) | kibar_axis_data[1]);
+	kibar_data.kibar_DATA_AXIS_Y = (int16_t)((kibar_axis_data[2] << 8) | kibar_axis_data[3]);
+	kibar_data.kibar_DATA_AXIS_Z = (int16_t)((kibar_axis_data[4] << 8) | kibar_axis_data[5]);
 	return kibar_data;
 }
 
