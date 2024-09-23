@@ -107,9 +107,9 @@ typedef enum {
  */
 
 typedef struct {
-	uint16_t kibar_DATA_AXIS_X;
-	uint16_t kibar_DATA_AXIS_Y;
-	uint16_t kibar_DATA_AXIS_Z;
+	int16_t kibar_DATA_AXIS_X;
+	int16_t kibar_DATA_AXIS_Y;
+	int16_t kibar_DATA_AXIS_Z;
 } KIBAR_AXIS_DATA;
 
 /*
