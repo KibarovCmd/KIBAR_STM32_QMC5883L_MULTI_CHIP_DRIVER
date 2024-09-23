@@ -126,7 +126,7 @@ typedef struct {
  * Temperature and chip id variables are saved to objects of this structure types.
  */
 
-typedef uint16_t KIBAR_QMC5883L_TEMPERATURE;
+typedef int16_t KIBAR_QMC5883L_TEMPERATURE;
 typedef uint8_t KIBAR_QMC5883L_CHIP_ID;
 
 #endif /* KIBAR_QMC5883L_INC_KIBAR_QMC5883L_DEF_H_ */
