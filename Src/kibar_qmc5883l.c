@@ -83,7 +83,7 @@ KIBAR_AXIS_DATA KIBAR_QMC5883L_REGISTER_READ_AXIS_DATA_(KIBAR_QMC5883L_ kibar_qm
 
 KIBAR_QMC5883L_HEAD_ANGLE KIBAR_QMC5883L_GET_ANGLE_(KIBAR_QMC5883L_ kibar_qmc5883l_) {
 	KIBAR_AXIS_DATA kibar_data = KIBAR_QMC5883L_REGISTER_READ_AXIS_DATA_(kibar_qmc5883l_);
-	KIBAR_QMC5883L_HEAD_ANGLE head_angle = atan2(kibar_data.kibar_DATA_AXIS_Y, kibar_data.kibar_DATA_AXIS_X);
+	KIBAR_QMC5883L_HEAD_ANGLE head_angle = atan2(kibar_data.kibar_DATA_AXIS_Y, kibar_data.kibar_DATA_AXIS_X) * (180.0 / M_PI);
 	if((uint16_t)head_angle < 0) (uint16_t)head_angle = (uint16_t)head_angle + 360;
 	return head_angle;
 }
