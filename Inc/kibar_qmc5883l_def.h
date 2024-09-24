@@ -10,6 +10,7 @@
 
 #include <stdlib.h>
 #include <stdint.h>
+#include <math.h>
 
 /*
  * Device Address
@@ -111,6 +112,12 @@ typedef struct {
 	int16_t kibar_DATA_AXIS_Y;
 	int16_t kibar_DATA_AXIS_Z;
 } KIBAR_AXIS_DATA;
+
+/*
+ * Head angle variable from compass are saved to objects of this structure types.
+ */
+
+typedef uint16_t KIBAR_QMC5883L_HEAD_ANGLE;
 
 /*
  * Status variables are saved to objects of this structure type.
